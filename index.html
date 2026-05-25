@@ -111,41 +111,122 @@
 <!-- skills section starts -->
 <section class="skills" id="skills">
 
-    <h2 class="heading"><i class="fas fa-laptop-code"></i> Skills & <span>Abilities</span></h2>
+    <h2 class="heading">💻 Skills & <span>Abilities</span></h2>
 
     <div class="container">
-          <div class="row" id="skillsContainer">
+        <div class="row" id="skillsContainer">
 
             <div class="bar">
-              <div class="info">
-                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/unity/unity-original.svg"/>
-                <span>Unity</span>
-              </div>
+                <div class="info">
+                    <img class="unity-icon" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/unity/unity-original.svg"/>
+                    <span>Unity</span>
+                </div>
             </div>
 
             <div class="bar">
-              <div class="info">
-                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/csharp/csharp-original.svg"/>
-                <span>C#</span>
-              </div>
+                <div class="info">
+                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/csharp/csharp-original.svg"/>
+                    <span>C#</span>
+                </div>
             </div>
 
             <div class="bar">
-              <div class="info">
-                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/photoshop/photoshop-plain.svg"/>
-                <span>Photoshop</span>
-              </div>
+                <div class="info">
+                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/photoshop/photoshop-plain.svg"/>
+                    <span>Photoshop</span>
+                </div>
             </div>
 
             <div class="bar">
-              <div class="info">
-                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/visualstudio/visualstudio-plain.svg"/>
-                <span>Visual Studio</span>
-              </div>
+                <div class="info">
+                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/visualstudio/visualstudio-plain.svg"/>
+                    <span>Visual Studio</span>
+                </div>
             </div>
-      </div>
-</div>
+
+        </div>
+    </div>
 </section>
+
+<style>
+.skills {
+    padding: 60px 0;
+}
+
+.heading {
+    text-align: center;
+    font-size: 28px;
+    margin-bottom: 30px;
+}
+
+.heading span {
+    color: #38bdf8;
+}
+
+.container {
+    width: 90%;
+    margin: auto;
+}
+
+.row {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+    gap: 15px;
+}
+
+/* CARD */
+.bar {
+    background: #111827;
+    padding: 14px 18px;
+    border-radius: 10px;
+    transition: 0.3s;
+    border: 1px solid transparent;
+}
+
+.bar:hover {
+    transform: translateY(-5px);
+    border: 1px solid #38bdf8;
+    background: #1f2937;
+}
+
+/* CONTENT */
+.info {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+/* ICON */
+.info img {
+    width: 26px;
+    height: 26px;
+    padding: 5px;
+    background: rgba(255,255,255,0.05);
+    border-radius: 6px;
+    object-fit: contain;
+
+    /* làm icon nổi hơn */
+    filter: brightness(1.2) contrast(1.2);
+    transition: 0.3s;
+}
+
+/* hover glow */
+.bar:hover img {
+    filter: drop-shadow(0 0 6px #38bdf8);
+}
+
+/* fix riêng Unity (icon màu đen) */
+.unity-icon {
+    filter: invert(1);
+}
+
+/* TEXT */
+.info span {
+    font-size: 15px;
+    color: #e5e7eb;
+}
+
+</style>
 <!-- skills section ends -->
 
 
