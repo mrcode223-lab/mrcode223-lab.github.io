@@ -351,3 +351,73 @@ header .navbar ul li a:hover{
   top: calc(100% - 12rem);
 }
 /* scroll top ends */
+/* ===== EXPERIENCE TIMELINE FIX ===== */
+
+.timeline {
+  position: relative;
+  max-width: 1000px;
+  margin: 50px auto;
+}
+
+/* line giữa */
+.timeline::after {
+  content: '';
+  position: absolute;
+  width: 4px;
+  background: #0f172a;
+  top: 0;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+/* container */
+.timeline .container {
+  position: relative;
+  width: 50%;
+  padding: 20px 40px;
+  box-sizing: border-box;
+}
+
+/* LEFT */
+.timeline .container.left {
+  left: 0;
+  text-align: right;
+}
+
+/* RIGHT */
+.timeline .container.right {
+  left: 50%;
+}
+
+/* BOX */
+.timeline .container .content {
+  display: inline-block;
+  background: #e58b1f;
+  padding: 15px 20px;
+  border-radius: 8px;
+  max-width: 90%;
+}
+
+/* DOT */
+.timeline .container::after {
+  content: '';
+  position: absolute;
+  width: 18px;
+  height: 18px;
+  background: #fff;
+  border: 3px solid #0f172a;
+  border-radius: 50%;
+  top: 25px;
+  z-index: 1;
+}
+
+/* dot left */
+.timeline .container.left::after {
+  right: -9px;
+}
+
+/* dot right */
+.timeline .container.right::after {
+  left: -9px;
+}
