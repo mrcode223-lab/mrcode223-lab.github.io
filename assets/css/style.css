@@ -1223,7 +1223,7 @@ form .button-area {
   top: calc(100% - 12rem);
 }
 /* scroll top ends */
-.unity-icon {
+.logo {
   width: 128px;   /* giảm xuống */
   height: 128px;
   object-fit: contain;
