@@ -1224,8 +1224,8 @@ form .button-area {
 }
 /* scroll top ends */
 .unity-icon {
-  width: 100px;   /* giảm xuống */
-  height: 100px;
+  width: 64px;   /* giảm xuống */
+  height: 64px;
   object-fit: contain;
   vertical-align: middle;
   margin-right: 6px;
